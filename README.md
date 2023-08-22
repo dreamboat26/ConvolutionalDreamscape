@@ -44,5 +44,5 @@ This tutorial assumes a simplified approach to ASR and doesn't cover advanced to
 
 Keep Learning! 
 
-Happy Learning!
+
 
