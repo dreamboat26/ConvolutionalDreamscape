@@ -1,39 +1,34 @@
-# ConvolutionalDreamscape
-## Personal TensorFlow Hub CNN Adventures
-
-Welcome to my personal repository of TensorFlow Hub CNN Adventures! Here, I'm excited to share the journey of my individual exploration and deployment of Convolutional Neural Network (CNN) models from TensorFlow Hub. This repository is a reflection of my hands-on learning and experimentation with CNNs.
+#  Generate music with an RNN
 
 ## About
 
-In this repository, you'll find a collection of my personal CNN model implementations and deployments, all inspired by the incredible resources offered by TensorFlow Hub. These implementations represent my growth and understanding of deep learning concepts, particularly in the field of computer vision.
+Welcome to the tutorial on generating musical notes using a simple Recurrent Neural Network (RNN). In this tutorial, you will learn how to train an RNN model to predict the next musical note in a sequence, based on a collection of piano MIDI files from the MAESTRO dataset. By the end of this tutorial, you will be able to generate longer sequences of musical notes using your trained model.
 
-## Features
+## Introduction
 
-   - Personal Growth: Join me as I showcase the progression of my skills and knowledge, from initial experiments to more advanced CNN model deployments.
-   - Learning in Action: Witness how I put the insights gained from TensorFlow Hub's resources into practice, effectively turning knowledge into tangible applications.
-   - Step-by-Step Guides: Each implementation is accompanied by detailed explanations, step-by-step guides, and code snippets that walk you through the process of deploying CNN models.
-   - Visual Demos: Immerse yourself in visual demonstrations that illustrate the capabilities of CNNs in tasks such as image recognition, style transfer, and more.
+Recurrent Neural Networks (RNNs) are a type of artificial neural network designed to handle sequences of data. In this tutorial, we will use an RNN to generate musical notes based on patterns learned from a dataset of piano MIDI files. The model will be trained to predict the next note in a sequence, allowing us to generate new musical compositions.
 
-## Getting Started
-- Browse through the main branch's content, where you'll find various directories, each representing a different CNN model deployment.
-- Explore the documentation, code, and any accompanying visual materials to understand the journey and the technical details behind each deployment.
-- Feel free to clone this repository and experiment with the implementations, adapt them to your projects, and take your own learning to the next level.
+## Parsing MIDI Files
+In this section, we'll explore how to parse MIDI files to extract musical note sequences. The provided code will help you read and preprocess MIDI files from the MAESTRO dataset.
 
-## Contributions and Feedback
+## Creating the RNN Model
+Learn how to build a simple Recurrent Neural Network (RNN) model for musical note generation. We'll define the architecture of the model using TensorFlow/Keras.
 
-While this repository is a personal space for my CNN adventures, I welcome any feedback, suggestions, or discussions related to the implementations and deployments. If you find something interesting or have questions, don't hesitate to get in touch.
+## Training the Model
+In this step, we'll train the RNN model using the parsed MIDI data. You'll configure the training process, including defining loss functions and optimizing the model's parameters.
 
-## Connect with Me
+## Generating Musical Notes
+Once the model is trained, you can generate new musical notes by providing an initial sequence. The model will predict subsequent notes based on the learned patterns. Experiment with different seed sequences for varied outputs.
 
-If you'd like to connect with me, share your thoughts, or discuss CNNs, feel free to reach out to my Github account.
-
-## Disclaimer
-
-Please remember that the implementations here are based on my personal learning experiences and are intended for educational purposes. They may not represent the most optimized or production-ready solutions.
+## Resources
+- https://magenta.tensorflow.org/datasets/maestro
+- https://docs.fileformat.com/audio/mid/
 
 ## License
 
 The code and content in this repository are shared under the Apache License, Version 2.0. Feel free to use them for your own learning and projects.
+
+Happy Learning!
 
 Happy Learning!
 
