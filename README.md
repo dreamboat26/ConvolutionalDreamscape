@@ -1,39 +1,48 @@
-# ConvolutionalDreamscape
-## Personal TensorFlow Hub CNN Adventures
-
-Welcome to my personal repository of TensorFlow Hub CNN Adventures! Here, I'm excited to share the journey of my individual exploration and deployment of Convolutional Neural Network (CNN) models from TensorFlow Hub. This repository is a reflection of my hands-on learning and experimentation with CNNs.
+# Automatic Speech Recognition (ASR) 
 
 ## About
 
-In this repository, you'll find a collection of my personal CNN model implementations and deployments, all inspired by the incredible resources offered by TensorFlow Hub. These implementations represent my growth and understanding of deep learning concepts, particularly in the field of computer vision.
+This tutorial provides a hands-on demonstration of preprocessing audio files in the WAV format and building a basic Automatic Speech Recognition (ASR) model. The goal is to recognize ten different spoken words using a subset of the Speech Commands dataset (Warden, 2018). This dataset consists of short audio clips, each lasting one second or less, containing various spoken commands like "down," "go," "left," "no," "right," "stop," "up," and "yes."
 
-## Features
+While real-world speech and audio recognition systems can be intricate, this tutorial parallels the concept of image classification using the MNIST dataset, offering an introductory insight into the underlying techniques involved.
 
-   - Personal Growth: Join me as I showcase the progression of my skills and knowledge, from initial experiments to more advanced CNN model deployments.
-   - Learning in Action: Witness how I put the insights gained from TensorFlow Hub's resources into practice, effectively turning knowledge into tangible applications.
-   - Step-by-Step Guides: Each implementation is accompanied by detailed explanations, step-by-step guides, and code snippets that walk you through the process of deploying CNN models.
-   - Visual Demos: Immerse yourself in visual demonstrations that illustrate the capabilities of CNNs in tasks such as image recognition, style transfer, and more.
+## Prerequisites
+Before you begin, ensure you have the following:
+   - Basic understanding of machine learning concepts.
+   - Familiarity with libraries like TensorFlow, and Keras.
+   - Familiarity with Fourier Tranformation. 
 
-## Getting Started
-- Browse through the main branch's content, where you'll find various directories, each representing a different CNN model deployment.
-- Explore the documentation, code, and any accompanying visual materials to understand the journey and the technical details behind each deployment.
-- Feel free to clone this repository and experiment with the implementations, adapt them to your projects, and take your own learning to the next level.
+## Tutorial Outline
+   ### Data Preparation:
+      - Download a portion of the Speech Commands dataset.
+      - Explore the dataset and its directory structure.
+      - Preprocess audio files in WAV format.
+   ### Model Building:
+      - Design a simple ASR model architecture.
+      - Convert audio signals into suitable features.
+      - Build and compile the ASR model using TensorFlow/Keras.
+   ### Model Training:
+      - Split the dataset into training and validation sets.
+      - Train the ASR model using the prepared dataset.
+      - Monitor training progress and prevent overfitting.
+   ### Evaluation:
+      - Evaluate the trained model on a test dataset.
+      - Calculate recognition accuracy and performance metrics.
+   ### Inference:
+      - Implement a function to transcribe spoken words.
+      - Test the ASR model on new audio samples.
+   ### Conclusion:
+      - Recap the key concepts covered in the tutorial.
+      - Highlight the significance of ASR in real-world applications.
 
-## Contributions and Feedback
+By following this tutorial, you'll gain foundational knowledge about ASR, audio preprocessing, and basic model building for speech recognition. Although actual ASR systems are intricate, this tutorial serves as a starting point for your exploration into this fascinating field.
 
-While this repository is a personal space for my CNN adventures, I welcome any feedback, suggestions, or discussions related to the implementations and deployments. If you find something interesting or have questions, don't hesitate to get in touch.
+## References 
+Warden, P. (2018). Speech Commands: A Dataset for Limited-Vocabulary Speech Recognition.
 
-## Connect with Me
+This tutorial assumes a simplified approach to ASR and doesn't cover advanced topics such as deep learning architectures (e.g., Transformers) or complex speech signal processing techniques.
 
-If you'd like to connect with me, share your thoughts, or discuss CNNs, feel free to reach out to my Github account.
-
-## Disclaimer
-
-Please remember that the implementations here are based on my personal learning experiences and are intended for educational purposes. They may not represent the most optimized or production-ready solutions.
-
-## License
-
-The code and content in this repository are shared under the MIT License. Feel free to use them for your own learning and projects.
+Keep Learning! 
 
 Happy Learning!
 
