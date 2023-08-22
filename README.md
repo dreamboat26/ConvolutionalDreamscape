@@ -29,6 +29,3 @@ Once the model is trained, you can generate new musical notes by providing an in
 The code and content in this repository are shared under the Apache License, Version 2.0. Feel free to use them for your own learning and projects.
 
 Happy Learning!
-
-Happy Learning!
-
