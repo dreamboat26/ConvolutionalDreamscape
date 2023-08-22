@@ -33,7 +33,7 @@ Please remember that the implementations here are based on my personal learning 
 
 ## License
 
-The code and content in this repository are shared under the MIT License. Feel free to use them for your own learning and projects.
+The code and content in this repository are shared under the Apache License, Version 2.0. Feel free to use them for your own learning and projects.
 
 Happy Learning!
 
