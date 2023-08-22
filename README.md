@@ -1,35 +1,20 @@
-# ConvolutionalDreamscape
-## Personal TensorFlow Hub CNN Adventures
-
-Welcome to my personal repository of TensorFlow Hub CNN Adventures! Here, I'm excited to share the journey of my individual exploration and deployment of Convolutional Neural Network (CNN) models from TensorFlow Hub. This repository is a reflection of my hands-on learning and experimentation with CNNs.
+# YAMNet Audio Event Prediction and Cat-Dog Sound Classification
 
 ## About
 
-In this repository, you'll find a collection of my personal CNN model implementations and deployments, all inspired by the incredible resources offered by TensorFlow Hub. These implementations represent my growth and understanding of deep learning concepts, particularly in the field of computer vision.
+Welcome to the YAMNet tutorial! In this guide, we'll explore the power of the YAMNet (Yet Another Multi-label Convolutional Neural Network) model – a versatile pre-trained deep neural network that predicts audio events across 521 classes, from laughter to sirens. But that's not all – we'll also take it a step further and leverage YAMNet's embeddings to build a custom model for classifying cat and dog sounds. Let's dive in!
 
-## Features
+## About YAMNet
 
-   - Personal Growth: Join me as I showcase the progression of my skills and knowledge, from initial experiments to more advanced CNN model deployments.
-   - Learning in Action: Witness how I put the insights gained from TensorFlow Hub's resources into practice, effectively turning knowledge into tangible applications.
-   - Step-by-Step Guides: Each implementation is accompanied by detailed explanations, step-by-step guides, and code snippets that walk you through the process of deploying CNN models.
-   - Visual Demos: Immerse yourself in visual demonstrations that illustrate the capabilities of CNNs in tasks such as image recognition, style transfer, and more.
+YAMNet is a pre-trained neural network that employs the MobileNetV1 depthwise-separable convolution architecture. It can use an audio waveform as input and make independent predictions for each of the 521 audio events from the AudioSet corpus.
 
-## Getting Started
-- Browse through the main branch's content, where you'll find various directories, each representing a different CNN model deployment.
-- Explore the documentation, code, and any accompanying visual materials to understand the journey and the technical details behind each deployment.
-- Feel free to clone this repository and experiment with the implementations, adapt them to your projects, and take your own learning to the next level.
+Internally, the model extracts "frames" from the audio signal and processes batches of these frames. This version of the model uses frames that are 0.96 second long and extracts one frame every 0.48 seconds .
 
-## Contributions and Feedback
+## Building a Cat-Dog Sound Classification Model
+Here's where the fun begins. The cat_dog_sound_classification.ipynb notebook will walk you through crafting a specialized model to distinguish between cat and dog sounds. The magic ingredient? YAMNet's embeddings as powerful features. Prepare to unravel data preprocessing, model architecture, training intricacies, and validation techniques.
 
-While this repository is a personal space for my CNN adventures, I welcome any feedback, suggestions, or discussions related to the implementations and deployments. If you find something interesting or have questions, don't hesitate to get in touch.
-
-## Connect with Me
-
-If you'd like to connect with me, share your thoughts, or discuss CNNs, feel free to reach out to my Github account.
-
-## Disclaimer
-
-Please remember that the implementations here are based on my personal learning experiences and are intended for educational purposes. They may not represent the most optimized or production-ready solutions.
+## Evaluation and Model Export
+No journey is complete without assessing achievements. Once your cat-dog sound classifier is trained, evaluate its prowess on a test dataset. The cat_dog_sound_classification.ipynb notebook will guide you. Furthermore, discover how to export your finely tuned model for future use in various applications.
 
 ## License
 
