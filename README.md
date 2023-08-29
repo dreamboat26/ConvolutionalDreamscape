@@ -1,39 +1,31 @@
-# ConvolutionalDreamscape
-## Personal TensorFlow Hub CNN Adventures
-
-Welcome to my personal repository of TensorFlow Hub CNN Adventures! Here, I'm excited to share the journey of my individual exploration and deployment of Convolutional Neural Network (CNN) models from TensorFlow Hub. This repository is a reflection of my hands-on learning and experimentation with CNNs.
+## Transfer learning and fine-tuning MobileNetV2
 
 ## About
 
-In this repository, you'll find a collection of my personal CNN model implementations and deployments, all inspired by the incredible resources offered by TensorFlow Hub. These implementations represent my growth and understanding of deep learning concepts, particularly in the field of computer vision.
+In this tutorial, you will learn how to classify images of cats and dogs by using transfer learning from a pre-trained network.
 
-## Features
+A pre-trained model is a saved network that was previously trained on a large dataset, typically on a large-scale image-classification task. You either use the pretrained model as is or use transfer learning to customize this model to a given task.
 
-   - Personal Growth: Join me as I showcase the progression of my skills and knowledge, from initial experiments to more advanced CNN model deployments.
-   - Learning in Action: Witness how I put the insights gained from TensorFlow Hub's resources into practice, effectively turning knowledge into tangible applications.
-   - Step-by-Step Guides: Each implementation is accompanied by detailed explanations, step-by-step guides, and code snippets that walk you through the process of deploying CNN models.
-   - Visual Demos: Immerse yourself in visual demonstrations that illustrate the capabilities of CNNs in tasks such as image recognition, style transfer, and more.
+The intuition behind transfer learning for image classification is that if a model is trained on a large and general enough dataset, this model will effectively serve as a generic model of the visual world. You can then take advantage of these learned feature maps without having to start from scratch by training a large model on a large dataset.
 
-## Getting Started
-- Browse through the main branch's content, where you'll find various directories, each representing a different CNN model deployment.
-- Explore the documentation, code, and any accompanying visual materials to understand the journey and the technical details behind each deployment.
-- Feel free to clone this repository and experiment with the implementations, adapt them to your projects, and take your own learning to the next level.
+In this notebook, you will try two ways to customize a pretrained model:
+- Feature Extraction: Use the representations learned by a previous network to extract meaningful features from new samples. You simply add a new classifier, which will be trained from scratch, on top of the pretrained model so that you can repurpose the feature maps learned previously for the dataset.
+You do not need to (re)train the entire model. The base convolutional network already contains features that are generically useful for classifying pictures. However, the final, classification part of the pretrained model is specific to the original classification task, and subsequently specific to the set of classes on which the model was trained.
+- Fine-Tuning: Unfreeze a few of the top layers of a frozen model base and jointly train both the newly-added classifier layers and the last layers of the base model. This allows us to "fine-tune" the higher-order feature representations in the base model in order to make them more relevant for the specific task.
 
-## Contributions and Feedback
-
-While this repository is a personal space for my CNN adventures, I welcome any feedback, suggestions, or discussions related to the implementations and deployments. If you find something interesting or have questions, don't hesitate to get in touch.
-
-## Connect with Me
-
-If you'd like to connect with me, share your thoughts, or discuss CNNs, feel free to reach out to my Github account.
-
-## Disclaimer
-
-Please remember that the implementations here are based on my personal learning experiences and are intended for educational purposes. They may not represent the most optimized or production-ready solutions.
+## Workflow
+You will follow the general machine learning workflow.
+- Examine and understand the data
+- Build an input pipeline, in this case using Keras ImageDataGenerator
+- Compose the model
+- Load in the pretrained base model (and pretrained weights)
+- Stack the classification layers on top
+- Train the model
+- Evaluate model
 
 ## License
 
-The code and content in this repository are shared under the Apache License, Version 2.0. Feel free to use them for your own learning and projects.
+The code and content in this repository are shared under the Apache License, Version 2.0 and MIT License. Feel free to use them for your own learning and projects.
 
 Happy Learning!
 
